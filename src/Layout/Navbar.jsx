@@ -457,7 +457,7 @@ function Navbar() {
                     onClick={navigateToCart}
                     className="icon-button-transparent"
                   >
-                    <IconShoppingCart size={22} stroke={1.5} />
+                    <IconShoppingCart size={22} stroke={1.5} /> 
                   </button>
               <button
                 type="button"

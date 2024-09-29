@@ -43,11 +43,34 @@ function App() {
   //     self.registration.showNotification(notificationTitle, notificationOptions);
   //   })
   // }, []);
+  useEffect(() => {
+    const API_URL =
+      "https://fashion-chatbot-production.up.railway.app/classify/";
+
+    const data = {
+      text: "I am going to goa beach, suggest me some outfits",
+    };
+
+    fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:sssssssssssasasasas", data);
+      })
+      .catch((error) => {
+        console.error("Error:asasasasasasas", error);
+      });
+  });
   return (
     <>
       <Navbar />
       {rawQuery ? (
-        <SearchPage rawQuery={rawQuery} city={city}/>
+        <SearchPage rawQuery={rawQuery} city={city} />
       ) : (
         <>
           <Hero />
