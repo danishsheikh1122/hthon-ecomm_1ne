@@ -258,6 +258,9 @@ function Navbar() {
               <Link to="/about-us">About Us</Link>
             </li>
             <li>
+              <Link to="/nearby">Nearby Stores</Link>
+            </li>
+            <li>
               {user?.role == "merchant" ? (
                 <Link to="/dashboard/currentOrders">Dashboard</Link>
               ) : (
@@ -344,6 +347,10 @@ function Navbar() {
                 <li>
                   <Link to="/about-us">About us</Link>
                 </li>
+                <li>
+                  <Link to="/nearby">Nearby Stores</Link>
+                </li>
+
                 <li>
                   {user?.role == "merchant" ? (
                     <Link to="/dashboard/currentOrders">Dashboard</Link>
