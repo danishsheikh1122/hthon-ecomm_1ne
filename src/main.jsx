@@ -30,6 +30,7 @@ import ForgotPassword from "./Components/User/ForgotPassword.jsx";
 import ResetPassword from "./Components/User/ResetPassword.jsx";
 import ContactUs from "./Components/User/ContactUs.jsx";
 import Bookings from "./Components/User/Bookings.jsx";
+import Neaby from "./Components/User/Neaby.jsx";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -77,6 +78,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               <Route path="/refund-policy" element={<Refund />}></Route>
               <Route path="/privacy-policy" element={<Privacy />}></Route>
               <Route path="/about-us" element={<About />}></Route>
+              <Route path="/nearby" element={<Neaby />}></Route>
               <Route path="/contact-us" element={<ContactUs />}></Route>
               <Route path="/wishlist" element={<Wishlist />}></Route>
               <Route path="/bookings" element={<Bookings />}></Route>

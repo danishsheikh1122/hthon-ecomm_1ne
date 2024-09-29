@@ -1,10 +1,12 @@
 import Footer from "../../Layout/Footer";
 import Navbar from "../../Layout/Navbar";
 import "../../styles/term.css";
+import ChatBot from "./Chatbot";
 function About() {
   return (
     <>
       <Navbar />
+      <ChatBot/>
       <div className="info-section">
         <div className="wrapper">
           <div className="info-container">
