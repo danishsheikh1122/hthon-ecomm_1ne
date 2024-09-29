@@ -25,6 +25,10 @@ export const userAuth = async () => {
   const response = await axios.get(`${url}/userAuth` , );
   return response;
 };
+export const recommendProducts = async () => {
+  const response = await axios.post(`${url}/recommededProducts`);
+  return response;
+};
 export const logout = async () => {
   const response = await axios.post(`${url}/logout`);
   return response;

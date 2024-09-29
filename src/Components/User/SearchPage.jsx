@@ -270,6 +270,7 @@ function SearchPage({ rawQuery, city }) {
             1 ? (
               products.data?.pages
                 .flatMap((data) => data.products)
+                .filter((data) => data.status)
                 .map((item) => {
                   return (
                     <Product

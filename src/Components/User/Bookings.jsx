@@ -67,6 +67,7 @@ function Bookings() {
                   <div className="order-status" style={setColor(order.orderStatus)}>
                     <p>{order.orderStatus}</p>
                   </div>
+                  
                 </div>
                 <div className="body">
                   {order.products.map((product, index) => (
@@ -132,6 +133,7 @@ function Bookings() {
                           </div>
                         </p>
                       </div>
+                        <h1>{order.orderId}</h1>
                     </div>
                   </div>
                 </div>

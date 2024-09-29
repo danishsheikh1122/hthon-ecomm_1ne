@@ -312,7 +312,7 @@
           justify-content: flex-start;
           gap: 1rem;
           align-items: center;
-          font-size: 2rem;
+          font-size: 1.4rem;
           color: black;
           text-overflow: ellipsis;
           overflow: hidden;
@@ -386,7 +386,7 @@
       padding-bottom: 4rem;
 
       .filter {
-        min-height: 30rem;
+        max-height:50rem;
       }
     }
   }

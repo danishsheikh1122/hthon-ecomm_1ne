@@ -25,6 +25,7 @@ import Loyalty from "./Merchant.Loyalty";
 import logo from "../../assets/zooptickWhite.svg"
 import MerchantInactiveProducts from "./Merchant.InactiveProducts";
 import Inventory from "./Merchant.Inventory";
+import useOutsideClick from "../User/useOutsideClick";
 
 function MerchantDashboard() {
   const { "*": splat } = useParams();

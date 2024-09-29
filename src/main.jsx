@@ -93,7 +93,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               <Route path="/admin/login" element={<AdminLogin />}></Route>
               <Route path="*" element={<Error404 />}></Route>
             </Routes>
-            <ReactQueryDevtools initialIsOpen={false} />
           </QueryClientProvider>
         </AdminAuthContextProvider>
       </AuthContextProvider>

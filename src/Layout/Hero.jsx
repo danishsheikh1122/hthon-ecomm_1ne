@@ -2,11 +2,14 @@ import { Link, useNavigate } from "react-router-dom";
 import hero from "../assets/hero.jpg";
 import variables from "../styles/variables.module.scss";
 import SearchBar from "../Components/User/SearchBar";
+import { recommendProducts } from "../Api/api";
 function Hero() {
   const navigate = useNavigate()
   function handleBrowseProducts(){
     navigate("/?rawQuery=tshirts")
   }
+  const res = recommendProducts()
+  console.log(res)
   return (
     <>
       
