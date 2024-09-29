@@ -37,7 +37,7 @@ The goal of this project is to improve the traditional shopping experience, both
 
 ### Prerequisites
 
-- Python 3.x , OEPN-CV
+- Python 3.12 , OpenCV 
 - MERN STACK
 - MongoDB (for database)
 - Mapbox API Key
